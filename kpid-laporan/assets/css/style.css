@@ -1,0 +1,218 @@
+:root {
+  --brand-red: #7a0c0c;
+  --brand-red-light: #b91c1c;
+  --brand-red-soft: #3a1010;
+  --bg-black: #121212;
+  --bg-surface: #1e1e1e;
+  --bg-surface-light: #262121;
+  --border-subtle: #3a2a2a;
+  --text-light: #f0e6e6;
+  --text-muted-dark: #b8a3a3;
+}
+
+body {
+  background-color: var(--bg-black);
+  color: var(--text-light);
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+}
+
+/* ===== Navbar ===== */
+.navbar.bg-primary {
+  background: linear-gradient(90deg, #1a0505, var(--brand-red)) !important;
+  border-bottom: 1px solid var(--brand-red-light);
+}
+.navbar .nav-link {
+  color: var(--text-light) !important;
+}
+.navbar .nav-link:hover {
+  color: #ff6b6b !important;
+}
+
+/* ===== Hero ===== */
+.hero {
+  background: linear-gradient(135deg, #000000, var(--brand-red-soft) 45%, var(--brand-red));
+  color: #fff;
+  padding: 48px 0;
+  margin-bottom: 32px;
+  border-bottom: 2px solid var(--brand-red-light);
+}
+.hero h1 {
+  font-weight: 700;
+}
+
+/* ===== Cards ===== */
+.card {
+  background-color: var(--bg-surface);
+  color: var(--text-light);
+  border: 1px solid var(--border-subtle);
+}
+.card-form {
+  border: 1px solid var(--border-subtle);
+  border-radius: 14px;
+  box-shadow: 0 6px 24px rgba(0,0,0,0.5);
+  background-color: var(--bg-surface);
+}
+.card-form .card-header {
+  background-color: var(--brand-red);
+  color: #fff;
+  border-radius: 14px 14px 0 0 !important;
+  font-weight: 600;
+  padding: 16px 24px;
+  border-bottom: 1px solid var(--brand-red-light);
+}
+.card-header.bg-white {
+  background-color: var(--bg-surface-light) !important;
+  color: var(--text-light) !important;
+  border-bottom: 1px solid var(--border-subtle);
+}
+.card-body {
+  color: var(--text-light);
+}
+.text-muted {
+  color: var(--text-muted-dark) !important;
+}
+
+/* ===== Form Elements ===== */
+.form-control, .form-select {
+  background-color: #191414;
+  border: 1px solid var(--border-subtle);
+  color: var(--text-light);
+}
+.form-control:focus, .form-select:focus {
+  background-color: #191414;
+  color: var(--text-light);
+  border-color: var(--brand-red-light);
+  box-shadow: 0 0 0 0.25rem rgba(185, 28, 28, 0.35);
+}
+.form-control::placeholder {
+  color: #7a6a6a;
+}
+.form-label {
+  color: var(--text-light);
+}
+.form-text {
+  color: var(--text-muted-dark) !important;
+}
+.form-check-input {
+  background-color: #191414;
+  border-color: var(--border-subtle);
+}
+.form-check-input:checked {
+  background-color: var(--brand-red);
+  border-color: var(--brand-red);
+}
+.required-mark {
+  color: #ff6b6b;
+}
+
+/* ===== Buttons ===== */
+.btn-primary {
+  background-color: var(--brand-red);
+  border-color: var(--brand-red);
+}
+.btn-primary:hover {
+  background-color: var(--brand-red-light);
+  border-color: var(--brand-red-light);
+}
+.btn-outline-primary {
+  color: #ff6b6b;
+  border-color: var(--brand-red-light);
+}
+.btn-outline-primary:hover {
+  background-color: var(--brand-red);
+  border-color: var(--brand-red);
+  color: #fff;
+}
+.btn-outline-secondary {
+  color: var(--text-light);
+  border-color: var(--border-subtle);
+}
+.btn-outline-secondary:hover {
+  background-color: var(--bg-surface-light);
+  color: #fff;
+  border-color: var(--border-subtle);
+}
+.btn-outline-light:hover {
+  color: var(--bg-black);
+}
+
+/* ===== Tables ===== */
+.table {
+  color: var(--text-light);
+}
+.table-light, .table > :not(caption) > * > * {
+  background-color: transparent;
+  color: var(--text-light);
+  border-color: var(--border-subtle);
+}
+.table-hover > tbody > tr:hover > * {
+  background-color: rgba(185, 28, 28, 0.15);
+  color: var(--text-light);
+}
+.table-laporan td, .table-laporan th {
+  vertical-align: middle;
+  border-color: var(--border-subtle);
+}
+
+/* ===== Badge / Status ===== */
+.badge-status {
+  font-size: 0.85rem;
+  padding: 0.4em 0.8em;
+}
+
+/* ===== Catatan / notes ===== */
+.catatan-item {
+  background: var(--bg-surface-light);
+  border-left: 4px solid var(--brand-red-light);
+  border-radius: 6px;
+  padding: 10px 14px;
+  margin-bottom: 10px;
+  color: var(--text-light);
+}
+
+/* ===== Alerts ===== */
+.alert-danger {
+  background-color: #3a1010;
+  color: #ff9b9b;
+  border-color: var(--brand-red-light);
+}
+.alert-success {
+  background-color: #10281a;
+  color: #7ee2a8;
+  border-color: #1f7a44;
+}
+.alert-warning {
+  background-color: #332510;
+  color: #ffcf7e;
+  border-color: #7a5a1f;
+}
+
+/* ===== Login page ===== */
+.login-wrapper {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(circle at top, var(--brand-red-soft), var(--bg-black) 70%);
+}
+
+/* ===== Footer ===== */
+footer.bg-dark {
+  background-color: #0a0a0a !important;
+  border-top: 2px solid var(--brand-red);
+}
+
+/* ===== Pagination ===== */
+.pagination .page-link {
+  background-color: var(--bg-surface);
+  border-color: var(--border-subtle);
+  color: var(--text-light);
+}
+.pagination .page-item.active .page-link {
+  background-color: var(--brand-red);
+  border-color: var(--brand-red);
+}
+.pagination .page-link:hover {
+  background-color: var(--bg-surface-light);
+  color: #fff;
+}
